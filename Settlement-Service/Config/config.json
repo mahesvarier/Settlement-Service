@@ -1,0 +1,6 @@
+{
+  "BookingSettings": {
+    "MaxSimultaneousBookings": 4,
+    "SlotDurationInHours": 1
+  }
+}
