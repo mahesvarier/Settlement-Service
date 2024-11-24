@@ -57,7 +57,7 @@ It includes validation to ensure the booking time is within the allowed range an
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository: `git clone https://github.com/mahesvarier/Settlement-Service.git`
 2. Open the solution in Visual Studio: SettlementService.sln
 3. Restore the dependencies: `dotnet restore`
 
