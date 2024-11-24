@@ -9,22 +9,27 @@
 		- The booking time is in the format "HH:mm"
 		- The booking time is within the allowed range (9:00 - 16:00)
 		- The booking name is a string that cannot be empty
+  
 	2. Configuration:
 		- The duration of each spot is configurable in config.json file. Should this time be increased or decreased we can modify the config file and deploy it. Making sure no code is changed (test cases to reflect the same changes)
 		- The maximum number of simultaneous bookings is configurable in the config.json file. Should this time be increased or decreased we can modify the config file and deploy it. Making sure no code is changed (test cases to reflect the same changes)
 		- The logs can be used to setting alerts or monitoring the application. Should there be more number of Internal Server Errors, we can set up alerts to notify the team.
+  
 	3. Front end usage:
 		- The front end can be used to create bookings. The front end can be a simple HTML page with a form that sends a POST request to the API endpoint.
 		- The BookingId and a Status Code of 200 is enough for the front end to confirm the booking.
 		- The application is configured to return specific error codes for different scenarios. For eg: the application can be expanded with the use of different Error codes while returning the same 400 status code. This will help the front end to understand the error and display the same to the user.
+  
 	4. Scalability:
 		- The application can be scaled horizontally by deploying multiple instances behind a load balancer.
 		- The application can be containerized using Docker and deployed to a container orchestration platform like Kubernetes.
+  
 	5. **Structure of the project**:
 		- Since the project has just one endpoint, the project is structured in a simple way using Minimal API.
 		- The project can be expanded with more endpoints and services as needed. 
 		- The traditional approach of using controllers was considered but it has been assumed that this project is a microservice doing only one function.
 		- The project can be structured using a layered architecture with separate projects for controllers, services, and data access.
+  
 	6. **Data storage**:
 		- The application does not use a database to store bookings. The bookings are stored in memory as a singleton. Which mean the data will be lost everytime the project is restarted.
 		- The data structures considered to store data are:
