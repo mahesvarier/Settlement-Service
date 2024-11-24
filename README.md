@@ -43,7 +43,7 @@
 					The advantage of this is that the retrieval time can be O(1) and the logic of checking for overlapping bookings will be simple.
 				- Disadvantage:
 					The disadvantage is that the implementation will be complex.
-			- Considering the above points, the List data structure was chosen to store the bookings since the number of bookings is expected to be small.
+		- Considering the above points, the List data structure was chosen to store the bookings since the number of bookings is expected to be small.
 
 ## Prerequisites
 
