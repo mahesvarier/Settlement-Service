@@ -71,8 +71,9 @@ It includes validation to ensure the booking time is within the allowed range an
 
 ### API Endpoints
 1. View the Swagger documentation for details on endpoint: `https://localhost:44322/swagger/index.html`
-2. Send a POST request to the endpoint: `https://localhost:44322/api/booking`
-3. Include the following JSON payload in the request body:
+2. Create a GET request to the endpoint: `https://localhost:44322/` to check if the application is running.
+3. Send a POST request to the endpoint: `https://localhost:44322/api/booking`
+4. Include the following JSON payload in the request body:
 ```json
 {
 	"bookingTime": "10:00",
