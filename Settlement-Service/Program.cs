@@ -69,7 +69,7 @@ app.MapPost("/api/booking", async (BookingRequest request, IBookingService booki
     }
 });
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Running...");
 #endregion
 
 app.Run();
